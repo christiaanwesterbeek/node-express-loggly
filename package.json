@@ -1,0 +1,8 @@
+{
+  "name": "express-loggly",
+  "version": "0.0.1",
+  "description": "Loggly middleware for Express",
+  "dependencies": {
+    "loggly":  "1.x"
+  }
+}
