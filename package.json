@@ -1,8 +1,17 @@
 {
-  "name": "express-loggly",
-  "version": "0.0.1",
-  "description": "Loggly middleware for Express",
-  "dependencies": {
-    "loggly":  "1.x"
-  }
+	"name"       : "express-loggly",
+	"version"    : "0.0.1",
+	"author"     : "Christiaan Westerbeek <chris@devotis.nl>",
+	"description": "Loggly middleware for Express",
+	"license"    : "MIT",
+	"main"		 : "index.js",
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/devotis/node-express-loggly.git"
+	},
+	"dependencies": {
+		"loggly":     "1.x",
+		"underscore": "1.x"
+	},
+	"keywords"   : ["node", "express", "middleware", "loggly"]
 }
