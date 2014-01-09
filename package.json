@@ -1,17 +1,36 @@
 {
-	"name"       : "express-loggly",
-	"version"    : "0.0.1",
-	"author"     : "Christiaan Westerbeek <chris@devotis.nl>",
-	"description": "Loggly middleware for Express",
-	"license"    : "MIT",
-	"main"		 : "index.js",
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/devotis/node-express-loggly.git"
-	},
-	"dependencies": {
-		"loggly":     "1.x",
-		"underscore": "1.x"
-	},
-	"keywords"   : ["node", "express", "middleware", "loggly"]
+  "name": "express-loggly",
+  "version": "0.0.1",
+  "author": {
+    "name": "Christiaan Westerbeek",
+    "email": "chris@devotis.nl"
+  },
+  "description": "Loggly middleware for Express",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devotis/node-express-loggly.git"
+  },
+  "dependencies": {
+    "loggly": "1.x",
+    "underscore": "1.x"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "middleware",
+    "loggly"
+  ],
+  "bugs": {
+    "url": "https://github.com/devotis/node-express-loggly/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/devotis/node-express-loggly",
+  "_id": "express-loggly@0.0.1",
+  "dist": {
+    "shasum": "4df120a5199207956dd058d835a929ad7018daad"
+  },
+  "_resolved": "git://github.com/devotis/node-express-loggly.git#897b9890a7da928686e57cde58f07ebd142776a8",
+  "_from": "express-loggly@git://github.com/devotis/node-express-loggly.git"
 }
