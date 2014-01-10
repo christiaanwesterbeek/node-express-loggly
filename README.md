@@ -1,12 +1,11 @@
 node-express-loggly
 ===================
 
-Loggly middleware for Express and some console-like functions.
+Loggly middleware for Express and some console-like functions. It depends on [node-loggly](https://github.com/nodejitsu/node-loggly) by nodejitsu.
 
 ##Install
 
     npm install https://github.com/devotis/node-express-loggly.git
-
 
 ##Usage
 
@@ -56,17 +55,19 @@ These methods log to Loggly as well
     logger.warn('Some message');  // <-- logs with level=WARN
     logger.error('Some message'); // <-- logs with level=ERROR
 
+These methods actually take 2 parameters. The second one being an array of additional tags your want to capture in Loggly.
+
 The first parameter may be a string, object or an instance of an error. The message is always transformed to an object with this signature: 
 
     {
-        level     : 'DEBUG'     //or INFO, LOG, WARN, ERROR
-        pid       : 1234,       //whatever is returned by process.id (inspired by Bunyan)
-        hostname  : 'server_name', //whatever is returned by require('os').hostname() (inspired by Bunyan)
-        msg       : 'the string or the error.message',
-        ...other_properties of the object...
+        level     : 'DEBUG'        // Or INFO, LOG, WARN, ERROR
+        pid       : 1234,          // whatever is returned by process.id (inspired by Bunyan)
+        hostname  : 'server_name', // whatever is returned by require('os').hostname() (inspired by Bunyan)
+        msg       : 'Some message' // Or the error.message
+        ...Ór the name-value pair of the object instead of msg...
     }
     
-These methods actually take 2 parameters. The second one being an array of additional tags your want to capture in Loggly.
+
 
 
     
