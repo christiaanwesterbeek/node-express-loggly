@@ -56,12 +56,14 @@ These methods log to Loggly as well
     logger.warn('Some message');  // <-- logs with level=WARN
     logger.error('Some message'); // <-- logs with level=ERROR
 
-The first parameter may be a string or object. The message is always transformed to an object with this signature: 
+The first parameter may be a string, object or an instance of an error. The message is always transformed to an object with this signature: 
 
     {
         level     : 'DEBUG'     //or INFO, LOG, WARN, ERROR
         pid       : 1234,       //whatever is returned by process.id (inspired by Bunyan)
-        hostname  : server_name //whatever is returned by require('os').hostname() (inspired by Bunyan)
+        hostname  : 'server_name', //whatever is returned by require('os').hostname() (inspired by Bunyan)
+        msg       : 'the string or the error.message',
+        ...other_properties of the object...
     }
     
 These methods actually take 2 parameters. The second one being an array of additional tags your want to capture in Loggly.
