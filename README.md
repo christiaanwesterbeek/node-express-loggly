@@ -12,8 +12,8 @@ Loggly middleware for Express and some console-like functions. It depends on [no
 Prepare like so
 
     var config = {
-        token: "your-really-long-input-token,
-        subdomain: "your-subdomain",
+        token: 'your-really-long-input-token',
+        subdomain: 'your-subdomain',
         tags: ['loggly-tag1', 'loggly-tag2', .., 'loggly-tagn'] 
     };
 
