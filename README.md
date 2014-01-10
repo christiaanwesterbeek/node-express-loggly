@@ -5,7 +5,7 @@ Loggly middleware for Express and some console-like functions. It depends on [no
 
 ##Install
 
-    npm install https://github.com/devotis/node-express-loggly.git
+    npm install https://github.com/devotis/node-express-loggly/tarball/master
 
 ##Usage
 
